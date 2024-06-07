@@ -1,13 +1,8 @@
 name: CI
 on:
   workflow_dispatch:
-    inputs:
-      url:
-      description: Custom input parameter
-      required: true
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{github.event.inputs.ur}}
-  
+      - run: echo "hello"  
